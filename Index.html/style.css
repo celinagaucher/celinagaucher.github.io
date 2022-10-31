@@ -1,75 +1,84 @@
-/*CSS DOCUMENT*/
-*{
-	margin: 0;
-	paddding: 0;
-	font-family: 'Roboto', sans-serif;
+body{
+	display: block;
+	overflow-x: hidden;
 }
-.container {
-	width: 100%;
-	height: 100vh;
-	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0, 0, 0, 0.7)), url(images/background.jpeg);
-	background-position: center;
-	background-size: cover;
-	padding-right: 8%;
-	padding-left: 8%;
-	padding-top: 1%;
-	box-sizing: border-box;
-}
-.navbar{
-	height:12%;
-	display: flex;
-	align-items: center;
-}
-.logo{
-	width: 250px;
-	cursor: pointer;
-}
-.row{
-	display: flex;
-	height: 88%;
-	align-items: center;
-}
-.col{
-	flex-basis: 50%;
-}
-h1{
-	color: white;
-	font-size: 100px;
 
-}
-p{
+nav{
+	background-color: black;
 	color: white;
-	font-size: 13px;
- 	line-height: 15px;
+}
 
+.navbar-brand img {
+	max-height: 50px;
 }
-.card{
-	width: 250px;
-	height: 230px;
-	display: table;
-	border-radius: 10px;
-	padding: 15px 25px;
-	box-sizing: border-box;
-	cursor: pointer;
-	margin: 20px 15px;
 
-	background-position: center;
-	background-size: cover;
+.navbar-brand {
+	font-size: 24px;
+	text-transform: uppercase;
+	font-weight: 900;
+	color: orange;
 }
-.card1{
-	background-image: url(images/vampire.jpeg);
-}
-.card2{
-	background-image: url(images/zombie.webp);
-}
-.card3{
-	background-image: url(images/witch.jpeg);
-}
-.card4{
-	background-image: url(images/ghost.jpeg);
-}
-h5{
+
+nav ul li a {
 	color: white;
-	text-shadow: 0 0 5px #999;
+	font-size: 22px;
+	margin: auto 10px;
+}
+
+nav ul li a:hover {
+	color: orangered;
+}
+
+section{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+section h1{
+	text-transform: uppercase;
+	font-weight: 900;
+	color: white;
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+.col p {
 	font-size: 16px;
+	font-weight: 300;
+	color: white;
 }
+
+button {
+	max-width: 50%;
+	border-radius: 50px !important;
+}
+
+#hero{
+	background-image: url(images/sky.gif);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#hero .col {
+	justify-content: center;
+	flex-direction: column;
+	display: flex;
+}
+
+#hero .img {
+	max-width: 130% !important;
+	width: 130%;
+}
+
+#hero .card {
+	box-shadow: 11px 7px 16px rgba(0, 0, 0, 0.45);
+	border: 0;
+	text-align: center;
+}
+
+#hero .icon {
+	width: 50px;
+	height: 50px;
+	margin-bottom: 20px;
+}
+
